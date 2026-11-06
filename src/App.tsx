@@ -811,7 +811,7 @@ export default function App() {
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" title="برنامه قطعی" />
                     </div>
                     <strong className="text-base font-black text-[#0B192C] font-mono-num block">
-                      ۰۷:۳۰ الی ۱۷:۰۰
+                      ۰۸:۰۰ الی ۱۷:۰۰
                     </strong>
                     <span className="text-xs text-slate-600 block">
                       صبحانه ۰۶:۳۰ تا ۰۷:۱۵ · ناهار و نماز ۱۲:۰۰ تا ۱۳:۰۰

@@ -233,23 +233,23 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
             digitalUrl={digitalUrl}
           />
 
-          <div className="px-9 py-5 flex-1 flex flex-col justify-between">
+          <div className="px-8 py-3.5 flex-1 flex flex-col justify-between">
             {/* Executive Petrochemical Command Instructor Card */}
             <div className="rounded-2xl overflow-hidden bg-gradient-to-l from-[#0B192C] via-[#0E2A47] to-[#123A60] text-white shadow-lg border border-[#0B192C]">
               <div className="grid grid-cols-12 items-stretch">
                 {/* Right Column (7 cols): Logos, Name, Role, Distinction & QR Code */}
-                <div className="col-span-7 p-5 flex flex-col justify-between space-y-3 text-right">
-                  <div className="space-y-2.5">
+                <div className="col-span-7 p-4 flex flex-col justify-between space-y-2 text-right">
+                  <div className="space-y-1.5">
                     {/* Top Row: OWJ Logo + مدرس دوره + AJA Logo */}
-                    <div className="flex items-center justify-between gap-3 border-b border-white/15 pb-3">
+                    <div className="flex items-center justify-between gap-3 border-b border-white/15 pb-2">
                       <div className="flex items-center gap-3">
                         <img
                           src={EXTRACTED_ASSETS.owjLogoWhite}
                           alt="OWJ Business Council"
                           referrerPolicy="no-referrer"
-                          className="h-9 w-auto object-contain"
+                          className="h-8 w-auto object-contain"
                         />
-                        <div className="h-6 w-px bg-white/20" />
+                        <div className="h-5 w-px bg-white/20" />
                         <span className="text-xs font-bold text-[#38BDF8]">
                           مدرس دوره:
                         </span>
@@ -258,23 +258,23 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                         src={EXTRACTED_ASSETS.ajaLogoWhite}
                         alt="AJA Abolfazl Jafari Asl"
                         referrerPolicy="no-referrer"
-                        className="h-8 w-auto object-contain"
+                        className="h-7 w-auto object-contain"
                       />
                     </div>
 
-                    <h2 className="text-3xl font-black tracking-tight text-white leading-tight">
+                    <h2 className="text-2xl font-black tracking-tight text-white leading-tight">
                       {DOCUMENT_META.instructorName}
                     </h2>
-                    <p className="text-base font-bold text-[#38BDF8]">
+                    <p className="text-sm font-bold text-[#38BDF8]">
                       {DOCUMENT_META.instructorRole}
                     </p>
-                    <p className="text-xs leading-relaxed text-slate-200 font-medium">
+                    <p className="text-[11px] leading-relaxed text-slate-200 font-medium">
                       {DOCUMENT_META.instructorDistinction}
                     </p>
                   </div>
 
                   {/* Bottom Row: QR Code + Caption */}
-                  <div className="pt-3 border-t border-white/15 flex items-center gap-4">
+                  <div className="pt-2 border-t border-white/15 flex items-center gap-3">
                     <div
                       onClick={() =>
                         onSelectImage?.(
@@ -282,23 +282,23 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                           'کد QR رسمی ابوالفضل جعفری اصل'
                         )
                       }
-                      className="bg-white p-2 rounded-xl shadow-md cursor-pointer shrink-0"
+                      className="bg-white p-1.5 rounded-xl shadow-md cursor-pointer shrink-0"
                     >
                       <img
                         src={EXTRACTED_ASSETS.qrCode}
                         alt="QR Code Abolfazl Jafari Asl"
                         referrerPolicy="no-referrer"
-                        className="w-16 h-16 object-contain"
+                        className="w-14 h-14 object-contain"
                       />
                     </div>
-                    <div className="space-y-1 text-right">
-                      <p className="text-xs font-bold text-white">
+                    <div className="space-y-0.5 text-right">
+                      <p className="text-[11px] font-bold text-white">
                         کد QR ارتباطی و استعلام مدارک مدرس
                       </p>
-                      <p className="text-[11px] text-slate-300">
+                      <p className="text-[10px] text-slate-300">
                         برای مشاهده تصویر کامل کد QR روی آن کلیک نمایید
                       </p>
-                      <p className="text-[11px] font-latin font-bold text-[#38BDF8]" dir="ltr">
+                      <p className="text-[10px] font-latin font-bold text-[#38BDF8]" dir="ltr">
                         (PMI-CPMAI) · (CPMAI v7) · (PMI)
                       </p>
                     </div>
@@ -306,7 +306,7 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                 </div>
 
                 {/* Left Column (5 cols): Framed Instructor Portrait Card */}
-                <div className="col-span-5 relative flex items-center justify-center p-4 bg-black/20">
+                <div className="col-span-5 relative flex items-center justify-center p-3 bg-black/20">
                   <div
                     onClick={() =>
                       onSelectImage?.(
@@ -314,7 +314,7 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                         'ابوالفضل جعفری اصل — مدیرعامل شرکت مشاوران مدیریت کسب و کار اوج'
                       )
                     }
-                    className="relative w-full h-[255px] rounded-2xl overflow-hidden border border-white/20 shadow-xl cursor-pointer bg-[#071322]"
+                    className="relative w-full h-[225px] rounded-xl overflow-hidden border border-white/20 shadow-xl cursor-pointer bg-[#071322]"
                   >
                     <img
                       src={EXTRACTED_ASSETS.instructorBanner}
@@ -328,13 +328,13 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
               </div>
             </div>
 
-            {/* 10 International Project Management Credentials - 2-Column Technical Grid */}
-            <div className="space-y-2.5 my-3">
-              <div className="flex items-center justify-between border-b border-slate-200 pb-2">
+            {/* 10 International Project Management Credentials - 1-Column Full-Width List */}
+            <div className="space-y-1.5 my-1.5">
+              <div className="flex items-center justify-between border-b border-slate-200 pb-1.5">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#008B99]" />
                   <h3 className="text-sm font-black text-[#0B192C]">
-                    سوابق علمی و گواهینامه‌های بین‌المللی مدیریت پروژه
+                    سوابق علمی و گواهینامه‌های بین‌المللی مدیریت پروژه مدرس
                   </h3>
                 </div>
                 <span className="text-[11px] font-bold text-[#008B99] bg-[#E0F7FA] px-2.5 py-0.5 rounded border border-[#008B99]/30">
@@ -342,17 +342,17 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-1">
                 {PM_CREDENTIALS.map((cred) => (
                   <div
                     key={cred.id}
-                    className="flex items-center justify-between gap-3 px-3 py-2 rounded-lg bg-white border border-slate-300/90 shadow-xs hover:border-[#008B99]/50 transition-colors"
+                    className="flex items-center justify-between gap-3 px-3.5 py-1.5 rounded-lg bg-white border border-slate-300/90 shadow-xs hover:border-[#008B99]/50 transition-colors"
                   >
-                    <div className="flex items-center gap-2 min-w-0">
-                      <span className="text-[11px] font-mono-num font-bold text-[#008B99] w-4 shrink-0">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span className="text-xs font-mono-num font-bold text-[#008B99] w-5 shrink-0">
                         {cred.index}.
                       </span>
-                      <p className="text-[11px] font-bold text-slate-800 leading-snug truncate" title={cred.titleFa}>
+                      <p className="text-xs font-bold text-slate-800 leading-normal" title={cred.titleFa}>
                         {cred.titleFa}
                       </p>
                     </div>
@@ -365,31 +365,31 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
             </div>
 
             {/* Preserved 4 International Accreditation Logos from Page 2 Bottom */}
-            <div className="pt-2 border-t border-slate-200">
-              <div className="grid grid-cols-4 gap-4 items-center justify-items-center bg-white py-2 px-6 rounded-xl border border-slate-200/90 shadow-xs">
+            <div className="pt-1.5 border-t border-slate-200">
+              <div className="grid grid-cols-4 gap-4 items-center justify-items-center bg-white py-1.5 px-6 rounded-xl border border-slate-200/90 shadow-xs">
                 <img
                   src={EXTRACTED_ASSETS.pmiLogo}
                   alt="Project Management Institute (PMI)"
                   referrerPolicy="no-referrer"
-                  className="h-10 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
                 <img
                   src={EXTRACTED_ASSETS.axelosLogo}
                   alt="AXELOS Global Best Practice"
                   referrerPolicy="no-referrer"
-                  className="h-8 w-auto object-contain"
+                  className="h-7 w-auto object-contain"
                 />
                 <img
                   src={EXTRACTED_ASSETS.ipmaLogo}
                   alt="IPMA International Project Management Association"
                   referrerPolicy="no-referrer"
-                  className="h-10 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
                 <img
                   src={EXTRACTED_ASSETS.iranPmaLogo}
                   alt="انجمن مدیریت پروژه ایران IranPMA"
                   referrerPolicy="no-referrer"
-                  className="h-11 w-auto object-contain"
+                  className="h-9 w-auto object-contain"
                 />
               </div>
             </div>
@@ -406,19 +406,19 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
             digitalUrl={digitalUrl}
           />
 
-          <div className="px-9 py-6 flex-1 flex flex-col justify-between">
+          <div className="px-8 py-4 flex-1 flex flex-col justify-between">
             {/* Header Banner */}
-            <div className="text-center space-y-1.5 pb-3 border-b border-slate-200">
+            <div className="text-center space-y-1 pb-2 border-b border-slate-200">
               <h2 className="text-2xl font-black text-[#0B192C]">
                 {DOCUMENT_META.instructorName}
               </h2>
-              <p className="text-[13px] font-bold text-[#008B99] max-w-2xl mx-auto leading-relaxed">
+              <p className="text-[12px] font-bold text-[#008B99] max-w-2xl mx-auto leading-relaxed">
                 اولین و تنها ایرانی دارنده تمامی گواهینامه‌های ۱۳گانه هوش مصنوعی از Cognilytica آمریکا و انستیتو مدیریت پروژه آمریکا (PMI) (CPMAI v7) (PMI-CPMAI)
               </p>
             </div>
 
-            {/* 13 AI Certifications List - 2-Column Technical Grid */}
-            <div className="space-y-2 my-2">
+            {/* 13 AI Certifications List - 1-Column Full-Width List */}
+            <div className="space-y-1.5 my-1.5">
               <div className="flex items-center justify-between border-b border-slate-200 pb-1.5">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#008B99]" />
@@ -431,21 +431,21 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-1">
                 {AI_CREDENTIALS_13.map((item) => (
                   <div
                     key={item.id}
-                    className="flex items-center justify-between gap-2.5 px-3 py-1.5 rounded-lg bg-white border border-slate-300/90 shadow-xs hover:border-[#008B99]/50 transition-colors"
+                    className="flex items-center justify-between gap-3 px-3.5 py-1.5 rounded-lg bg-white border border-slate-300/90 shadow-xs hover:border-[#008B99]/50 transition-colors"
                   >
-                    <div className="flex items-center gap-2 min-w-0">
-                      <span className="text-[10.5px] font-mono-num font-bold text-[#008B99] w-4 shrink-0">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span className="text-xs font-mono-num font-bold text-[#008B99] w-5 shrink-0">
                         {item.index}.
                       </span>
-                      <p className="text-[11px] font-bold text-slate-800 leading-snug truncate" title={item.titleFa}>
+                      <p className="text-xs font-bold text-slate-800 leading-normal" title={item.titleFa}>
                         {item.titleFa}
                       </p>
                     </div>
-                    <span className="text-[9.5px] font-latin font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 shrink-0">
+                    <span className="text-[10px] font-latin font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded border border-slate-200 shrink-0">
                       {item.code}
                     </span>
                   </div>
@@ -454,23 +454,23 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
             </div>
 
             {/* Preserved Official PMI Certificates (Picture6 & Picture3) */}
-            <div className="pt-2">
-              <div className="grid grid-cols-2 gap-5">
+            <div className="pt-1.5">
+              <div className="grid grid-cols-2 gap-4">
                 {OFFICIAL_CERTIFICATES.map((cert) => (
                   <div
                     key={cert.id}
                     onClick={() => onSelectImage?.(cert.image, cert.titleFa)}
-                    className="group cursor-pointer rounded-xl overflow-hidden border border-slate-300 bg-white p-2.5 shadow-xs hover:border-[#008B99] transition-colors"
+                    className="group cursor-pointer rounded-xl overflow-hidden border border-slate-300 bg-white p-2 shadow-xs hover:border-[#008B99] transition-colors"
                   >
                     <div className="overflow-hidden rounded-lg bg-slate-50 border border-slate-200">
                       <img
                         src={cert.image}
                         alt={cert.titleEn}
                         referrerPolicy="no-referrer"
-                        className="w-full h-44 object-contain"
+                        className="w-full h-36 object-contain"
                       />
                     </div>
-                    <div className="pt-2 px-1 flex items-center justify-between text-[11px] text-slate-600">
+                    <div className="pt-1.5 px-1 flex items-center justify-between text-[11px] text-slate-600">
                       <span className="font-black text-[#0B192C] truncate">{cert.titleFa}</span>
                       <span className="font-mono-num text-[10px] font-bold text-[#008B99] shrink-0">
                         #{cert.certNumber}
