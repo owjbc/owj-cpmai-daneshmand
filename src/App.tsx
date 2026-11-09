@@ -742,8 +742,8 @@ export default function App() {
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                       />
 
-                      {/* Bottom 29.5% Cover Typography, QR Code & Contact Strip placed directly on Picture5's lower canvas */}
-                      <div className="absolute inset-x-0 bottom-0 h-[29.5%] px-5 pb-3.5 pt-1 flex flex-col justify-between text-right">
+                      {/* Bottom 29.5% Cover Typography, QR Code & Contact Strip */}
+                      <div className="absolute inset-x-0 bottom-0 h-[29.5%] px-5 pb-3.5 pt-2 flex flex-col justify-between text-right bg-white border-t border-[#008B99]">
                         <div className="flex items-center justify-between gap-3">
                           <div className="space-y-1 flex-1">
                             <p className="text-xs sm:text-sm font-black text-[#0F172A] leading-snug">

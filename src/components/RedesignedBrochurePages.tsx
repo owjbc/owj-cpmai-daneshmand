@@ -155,7 +155,7 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
           />
 
           {/* Bottom 29.5% Overlay */}
-          <div className="absolute inset-x-0 bottom-0 h-[29.5%] z-10 px-12 pb-6 pt-9 flex flex-col justify-between">
+          <div className="absolute inset-x-0 bottom-0 h-[29.5%] z-10 px-12 pb-6 pt-9 flex flex-col justify-between bg-white border-t-2 border-[#008B99]">
             {/* Upper Block: Full-Width Single-Line Right-Aligned Titles + Cyan Rule */}
             <div className="w-full">
               <div className="pr-4 space-y-2 text-right">
