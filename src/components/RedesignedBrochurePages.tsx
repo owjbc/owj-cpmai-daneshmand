@@ -202,11 +202,11 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                 </a>
 
                 {/* Left in RTL: Client Project Title & Subtitle */}
-                <div className="text-left flex flex-col items-end">
-                  <span className="text-[25px] font-black text-[#008B99] leading-tight tracking-tight">
+                <div className="text-left flex flex-col items-end max-w-[500px]">
+                  <span className="text-[20px] font-black text-[#008B99] leading-snug tracking-tight text-left">
                     {DOCUMENT_META.clientProject}
                   </span>
-                  <span className="text-[12px] font-bold text-slate-700 leading-tight mt-0.5">
+                  <span className="text-[11.5px] font-bold text-slate-700 leading-tight mt-0.5 text-left">
                     {DOCUMENT_META.clientSubtitle}
                   </span>
                 </div>
