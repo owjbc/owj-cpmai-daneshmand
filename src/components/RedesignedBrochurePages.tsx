@@ -146,7 +146,10 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
             alt="پروتکل برگزاری بوت کمپ آموزشی CPMAI - شرکت مشاوران مدیریت کسب و کار اوج"
             referrerPolicy="no-referrer"
             onClick={() =>
-              onSelectImage?.(EXTRACTED_ASSETS.coverFull, 'طرح روی جلد — پتروشیمی دماوند')
+              onSelectImage?.(
+                EXTRACTED_ASSETS.coverFull,
+                'طرح روی جلد — مؤسسه تحقیق و توسعه دانشمند (بنیاد مستضعفان)'
+              )
             }
             className="absolute inset-0 w-full h-full object-fill block cursor-pointer"
           />
@@ -198,10 +201,13 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                   </div>
                 </a>
 
-                {/* Left in RTL: Client Project Title */}
-                <div className="text-left">
-                  <span className="text-[32px] font-black text-[#008B99] whitespace-nowrap tracking-tight">
+                {/* Left in RTL: Client Project Title & Subtitle */}
+                <div className="text-left flex flex-col items-end">
+                  <span className="text-[25px] font-black text-[#008B99] leading-tight tracking-tight">
                     {DOCUMENT_META.clientProject}
+                  </span>
+                  <span className="text-[12px] font-bold text-slate-700 leading-tight mt-0.5">
+                    {DOCUMENT_META.clientSubtitle}
                   </span>
                 </div>
               </div>
@@ -500,7 +506,7 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                   {EXECUTIVE_LETTER.invocation}
                 </p>
                 <p className="text-xs text-slate-500 font-semibold">
-                  خطاب به مدیریت و واحد مجری و ناظر کارگاه‌های آموزشی — {DOCUMENT_META.clientProject}
+                  خطاب به مدیریت و واحد مجری و ناظر کارگاه‌های آموزشی — {DOCUMENT_META.clientProject} ({DOCUMENT_META.clientSubtitle})
                 </p>
               </div>
 

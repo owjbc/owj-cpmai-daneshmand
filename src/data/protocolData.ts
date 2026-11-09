@@ -30,7 +30,8 @@ export const DOCUMENT_META = {
   title: 'پروتکل برگزاری بوت کمپ آموزشی CPMAI',
   organization: 'شرکت مشاوران مدیریت کسب و کار اوج',
   organizationEn: 'OWJ Business Council',
-  clientProject: 'طرح پتروشیمی دماوند',
+  clientProject: 'مؤسسه تحقیق و توسعه دانشمند',
+  clientSubtitle: 'بازوی علمی، پژوهشی و فناوری بنیاد مستضعفان انقلاب اسلامی',
   instructorName: 'ابوالفضل جعفری اصل',
   instructorNameEn: 'Abolfazl Jafari Asl',
   instructorRole: 'مدیرعامل شرکت مشاوران مدیریت کسب و کار اوج',
@@ -50,7 +51,8 @@ export const DOCUMENT_META = {
 const BASE_URL = import.meta.env.BASE_URL || './';
 
 export const EXTRACTED_ASSETS = {
-  coverFull: `${BASE_URL}assets/aistudio/Picture5_665b6fbe.jpg`,
+  coverFull: `${BASE_URL}assets/daneshmand/daneshmand_cover.jpg`,
+  daneshmandEmblem: `${BASE_URL}assets/daneshmand/daneshmand_emblem.jpg`,
   contactStrip: `${BASE_URL}assets/extracted/obj_19.png`,
   pageTemplateBg: `${BASE_URL}assets/extracted/obj_23.jpg`,
   instructorBanner: `${BASE_URL}assets/aistudio/Picture2_643ee570.png`,
@@ -111,7 +113,7 @@ export const CONNECTION_TEST_PROTOCOL = {
 
 export const EXECUTIVE_LETTER = {
   invocation: 'بسمه تعالی',
-  body: 'کارفرمای محترم پروتکل پیوست جهت برگزاری اثربخش سلسله کارگاه‌های آموزشی تربیت متخصص حرفه‌ای راهبری هوش مصنوعی (CPMAI) در آن مجموعه معظم توسط شرکت مشاوران مدیریت کسب و کار اوج آماده‌سازی و تهیه گردیده است. خواهشمند است دستور فرمایید بندهای آن بصورت کامل توسط واحد مجری و ناظر کارگاه‌های آموزشی و جلسات مشاوره‌ای اجرایی گردد. امید است خدمات ثمربخشی را برای آن مجموعه ارائه نموده و در راستای تعالی اهداف والای آن مجموعه تمام تلاش خود را به کارگیریم.',
+  body: 'کارفرمای محترم پروتکل پیوست جهت برگزاری اثربخش سلسله کارگاه‌های آموزشی تربیت متخصص حرفه‌ای راهبری هوش مصنوعی (CPMAI) در مؤسسه تحقیق و توسعه دانشمند (بازوی علمی، پژوهشی و فناوری بنیاد مستضعفان انقلاب اسلامی) توسط شرکت مشاوران مدیریت کسب و کار اوج آماده‌سازی و تهیه گردیده است. خواهشمند است دستور فرمایید بندهای آن بصورت کامل توسط واحد مجری و ناظر کارگاه‌های آموزشی و جلسات مشاوره‌ای اجرایی گردد. امید است خدمات ثمربخشی را برای آن مجموعه معظم ارائه نموده و در راستای تعالی اهداف والای آن تمام تلاش خود را به کارگیریم.',
   signOff: 'با تشکر',
   department: 'دپارتمان کوچینگ',
   company: 'شرکت مشاوران مدیریت کسب و کار اوج',

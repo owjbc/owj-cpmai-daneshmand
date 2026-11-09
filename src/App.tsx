@@ -62,8 +62,8 @@ interface LightboxState {
 
 const CHECKLIST_STORAGE_KEY = 'owj_cpmai_protocol_checklist_v1';
 const CONN_STEPS_STORAGE_KEY = 'owj_cpmai_conn_steps_v1';
-const DIGITAL_URL_STORAGE_KEY = 'owj_cpmai_digital_url_v3';
-const DEFAULT_PUBLIC_APP_URL = 'https://owjbc.github.io/owj-cpmai-protocol/';
+const DIGITAL_URL_STORAGE_KEY = 'owj_cpmai_digital_url_daneshmand_v1';
+const DEFAULT_PUBLIC_APP_URL = 'https://owjbc.github.io/owj-cpmai-daneshmand/';
 
 function getAutoDetectedPublicUrl(): string {
   if (typeof window === 'undefined') return DEFAULT_PUBLIC_APP_URL;
@@ -673,11 +673,16 @@ export default function App() {
                             ۹ بند اجرایی · ۲۳ گواهینامه بین‌المللی مدرس
                           </span>
                         </div>
-                        <div className="text-2xl sm:text-3xl font-black text-[#008B99] tracking-tight">
-                          {DOCUMENT_META.clientProject}
+                        <div className="space-y-1">
+                          <div className="text-2xl sm:text-3xl font-black text-[#008B99] tracking-tight">
+                            {DOCUMENT_META.clientProject}
+                          </div>
+                          <div className="text-xs sm:text-sm font-bold text-slate-700">
+                            {DOCUMENT_META.clientSubtitle}
+                          </div>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify">
-                          این سند شامل معرفی سوابق و گواهینامه‌های ۱۳گانه هوش مصنوعی مدرس دوره، ابلاغیه دپارتمان کوچینگ، استانداردهای فنی سالن، مشخصات سیستم شرکت‌کنندگان، پوستر تست اتصال پیش از کلاس، جدول زمان‌بندی و ضوابط حفظ حقوق مالکیت معنوی است.
+                          این سند شامل معرفی سوابق و گواهینامه‌های ۱۳گانه هوش مصنوعی مدرس دوره، ابلاغیه دپارتمان کوچینگ، استانداردهای فنی سالن، مشخصات سیستم شرکت‌کنندگان، پوستر تست اتصال پیش از کلاس، جدول زمان‌بندی و ضوابط حفظ حقوق مالکیت معنوی ویژه مؤسسه تحقیق و توسعه دانشمند است.
                         </p>
                       </div>
                     </div>
@@ -719,20 +724,20 @@ export default function App() {
                     </div>
                   </div>
 
-                  {/* Left Column in RTL: Full Uncropped Picture5.jpg Cover Artwork */}
+                  {/* Left Column in RTL: Full Uncropped Cover Artwork */}
                   <div className="lg:col-span-5 flex items-center justify-center">
                     <div
                       onClick={() =>
                         setLightbox({
                           src: EXTRACTED_ASSETS.coverFull,
-                          title: 'تصویر کامل روی جلد — پروتکل برگزاری بوت کمپ آموزشی CPMAI',
+                          title: 'طرح روی جلد سند پروتکل اجرایی — مؤسسه تحقیق و توسعه دانشمند',
                         })
                       }
                       className="relative w-full max-w-[460px] aspect-[1648/2381] rounded-2xl overflow-hidden border border-slate-300 shadow-xl group cursor-pointer bg-white"
                     >
                       <img
                         src={EXTRACTED_ASSETS.coverFull}
-                        alt="پروتکل برگزاری بوت کمپ آموزشی CPMAI - طرح پتروشیمی دماوند"
+                        alt="پروتکل برگزاری بوت کمپ آموزشی CPMAI - مؤسسه تحقیق و توسعه دانشمند"
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                       />
