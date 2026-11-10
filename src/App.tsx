@@ -812,14 +812,14 @@ export default function App() {
 
                   <div className="p-5 rounded-xl bg-white border border-slate-200/90 shadow-xs space-y-1 hover:border-[#008B99]/40 transition-colors">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-medium text-slate-500">ساعات برگزاری روزانه</span>
+                      <span className="text-xs font-medium text-slate-500">ساعات برگزاری جلسات</span>
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" title="برنامه قطعی" />
                     </div>
-                    <strong className="text-base font-black text-[#0B192C] font-mono-num block">
-                      ۰۸:۰۰ الی ۱۷:۰۰
+                    <strong className="text-sm font-black text-[#0B192C] font-mono-num block">
+                      چهارشنبه ۱۴-۱۸ · پنج‌شنبه ۸-۱۲
                     </strong>
                     <span className="text-xs text-slate-600 block">
-                      صبحانه ۰۶:۳۰ تا ۰۷:۱۵ · ناهار و نماز ۱۲:۰۰ تا ۱۳:۰۰
+                      پذیرایی میان‌وعده در زمان استراحت میان‌کلاسی
                     </span>
                   </div>
 
@@ -1575,38 +1575,38 @@ export default function App() {
                   <div className="flex flex-wrap items-end justify-between gap-4 border-b border-slate-200 pb-4">
                     <div>
                       <span className="text-xs font-bold text-[#008B99] block">
-                        جدول زمان‌بندی رسمی روز برگزاری بوت‌کمپ
+                        جدول زمان‌بندی رسمی برگزاری بوت‌کمپ
                       </span>
                       <h2 className="text-2xl sm:text-3xl font-black text-[#0B192C] mt-1">
-                        برنامه زمانی کلاس، پذیرایی و استراحت
+                        برنامه هفتگی کلاس‌ها و پذیرایی میان‌وعده
                       </h2>
                     </div>
                     <p className="text-xs text-slate-500 font-medium">
-                      پذیرایی صرفاً در زمان استراحت و خارج از فضای قرارگیری خوراکی بسته‌بندی‌شده در سالن انجام پذیرد
+                      پذیرایی میان‌وعده صرفاً در زمان استراحت میان‌کلاسی در فضای پیش‌بینی‌شده انجام می‌پذیرد
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {DAILY_SCHEDULE.map((slot, i) => (
                       <div
                         key={slot.id}
-                        className="rounded-2xl border border-slate-300/80 bg-white p-6 flex flex-col justify-between space-y-4 shadow-xs hover:border-[#008B99] transition-colors"
+                        className="rounded-2xl border border-slate-300/80 bg-white p-6 sm:p-7 flex flex-col justify-between space-y-4 shadow-xs hover:border-[#008B99] transition-colors"
                       >
                         <div className="space-y-2">
                           <div className="flex items-center justify-between text-xs text-slate-500">
-                            <span className="font-bold">نوبت ۰{i + 1}</span>
+                            <span className="font-bold">جلسه ۰{i + 1}</span>
                             <span className="font-mono-num text-[#008B99] font-bold">
                               ساعت رسمی
                             </span>
                           </div>
-                          <div className="text-2xl font-black text-[#0B192C] font-mono-num">
+                          <div className="text-3xl font-black text-[#0B192C] font-mono-num">
                             {slot.timeRange}
                           </div>
-                          <h3 className="text-base font-black text-slate-800">
+                          <h3 className="text-lg font-black text-slate-800">
                             {slot.title}
                           </h3>
                         </div>
-                        <p className="text-xs text-slate-600 leading-relaxed pt-3 border-t border-slate-100 font-medium">
+                        <p className="text-sm text-slate-600 leading-relaxed pt-3 border-t border-slate-100 font-medium">
                           {slot.description}
                         </p>
                       </div>

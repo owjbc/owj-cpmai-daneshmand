@@ -734,16 +734,16 @@ export const RedesignedBrochurePages: React.FC<RedesignedBrochurePagesProps> = (
                   </p>
 
                   {clause.bullets && (
-                    <div className="grid grid-cols-4 gap-2.5 pt-1">
+                    <div className="grid grid-cols-2 gap-3 pt-1">
                       {DAILY_SCHEDULE.map((slot) => (
                         <div
                           key={slot.id}
                           className="bg-slate-50 p-3 rounded-lg border border-slate-200 text-center space-y-1"
                         >
-                          <span className="text-xs font-black text-[#008B99] font-mono-num block">
+                          <span className="text-sm font-black text-[#008B99] font-mono-num block">
                             {slot.timeRange}
                           </span>
-                          <span className="text-[11px] font-bold text-slate-800 block">
+                          <span className="text-xs font-bold text-slate-800 block">
                             {slot.title}
                           </span>
                         </div>
